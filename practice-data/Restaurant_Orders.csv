@@ -1,0 +1,41 @@
+Order_ID,Date,Time,Customer_Name,Items_Ordered,Category,Quantity,Price,Total,Payment_Type,Rating
+ORD001,2024-03-01,12:15,James Wilson,Caesar Salad,Starter,1,8.50,8.50,Credit Card,4
+ORD002,2024-03-01,12:30,Maria Garcia,Grilled Salmon,Main,1,24.00,24.00,Cash,5
+ORD003,2024-03-01,13:00,David Chen,Spring Rolls,Starter,2,6.50,13.00,Credit Card,4
+ORD004,2024-03-01,13:15,Sarah Johnson,Chocolate Cake,Dessert,1,7.50,7.50,Debit Card,5
+ORD005,2024-03-01,18:45,Michael Brown,Beef Steak,Main,1,32.00,32.00,Credit Card,5
+ORD006,2024-03-01,19:00,Emily Davis,Iced Tea,Drinks,3,4.00,12.00,Cash,3
+ORD007,2024-03-02,12:00,Robert Taylor,Tomato Soup,Starter,2,5.50,11.00,Debit Card,4
+ORD008,2024-03-02,12:45,Jennifer White,Pasta Carbonara,Main,1,18.50,18.50,Credit Card,4
+ORD009,2024-03-02,13:30,William Anderson,Tiramisu,Dessert,2,8.00,16.00,Cash,5
+ORD010,2024-03-02,14:00,Lisa Martinez,Lemonade,Drinks,4,3.50,14.00,Debit Card,4
+ORD011,2024-03-02,19:15,Christopher Lee,Garlic Bread,Starter,1,5.00,5.00,Credit Card,3
+ORD012,2024-03-02,19:30,Amanda Thomas,Chicken Curry,Main,2,19.00,38.00,Cash,5
+ORD013,2024-03-03,11:30,Daniel Harris,Bruschetta,Starter,3,7.00,21.00,Credit Card,4
+ORD014,2024-03-03,12:15,Jessica Clark,Fish and Chips,Main,1,16.50,16.50,Debit Card,4
+ORD015,2024-03-03,13:00,Matthew Lewis,Apple Pie,Dessert,1,6.50,6.50,Cash,5
+ORD016,2024-03-03,13:45,Ashley Robinson,Coffee,Drinks,2,4.50,9.00,Credit Card,4
+ORD017,2024-03-03,18:00,Andrew Walker,Onion Rings,Starter,2,5.50,11.00,Debit Card,3
+ORD018,2024-03-03,19:00,Stephanie Hall,Lamb Chops,Main,1,28.00,28.00,Credit Card,5
+ORD019,2024-03-04,12:00,Joshua Young,Mozzarella Sticks,Starter,1,7.50,7.50,Cash,4
+ORD020,2024-03-04,12:30,Nicole King,Vegetable Stir Fry,Main,1,15.00,15.00,Credit Card,4
+ORD021,2024-03-04,13:15,Ryan Wright,Cheesecake,Dessert,2,8.50,17.00,Debit Card,5
+ORD022,2024-03-04,14:00,Samantha Scott,Smoothie,Drinks,1,6.00,6.00,Cash,4
+ORD023,2024-03-04,18:30,Kevin Green,Calamari,Starter,1,9.50,9.50,Credit Card,4
+ORD024,2024-03-04,19:15,Michelle Adams,Lobster Tail,Main,1,42.00,42.00,Credit Card,5
+ORD025,2024-03-05,11:45,Brian Baker,Nachos,Starter,2,8.00,16.00,Debit Card,3
+ORD026,2024-03-05,12:30,Rachel Nelson,Mushroom Risotto,Main,1,17.50,17.50,Cash,4
+ORD027,2024-03-05,13:00,Jason Carter,Ice Cream Sundae,Dessert,3,5.50,16.50,Credit Card,5
+ORD028,2024-03-05,13:45,Lauren Mitchell,Hot Chocolate,Drinks,2,4.00,8.00,Debit Card,4
+ORD029,2024-03-05,18:15,Brandon Perez,Shrimp Cocktail,Starter,1,12.00,12.00,Cash,5
+ORD030,2024-03-05,19:00,Kimberly Roberts,Duck Confit,Main,1,35.00,35.00,Credit Card,5
+ORD031,2024-03-06,12:00,Justin Turner,Soup of the Day,Starter,1,6.00,6.00,Debit Card,3
+ORD032,2024-03-06,12:45,Amber Phillips,BBQ Ribs,Main,1,26.00,26.00,Cash,4
+ORD033,2024-03-06,13:30,Tyler Campbell,Creme Brulee,Dessert,1,9.00,9.00,Credit Card,5
+ORD034,2024-03-06,14:15,Heather Parker,Milkshake,Drinks,2,5.50,11.00,Debit Card,4
+ORD035,2024-03-06,18:45,Eric Evans,Chicken Wings,Starter,3,9.00,27.00,Cash,4
+ORD036,2024-03-06,19:30,Megan Edwards,Seafood Platter,Main,1,38.00,38.00,Credit Card,5
+ORD037,2024-03-07,11:30,Aaron Collins,Caprese Salad,Starter,1,8.00,8.00,Debit Card,4
+ORD038,2024-03-07,12:15,Danielle Stewart,Pork Tenderloin,Main,2,22.00,44.00,Cash,4
+ORD039,2024-03-07,13:00,Sean Sanchez,Fruit Tart,Dessert,1,7.00,7.00,Credit Card,5
+ORD040,2024-03-07,13:45,Victoria Morris,Fresh Juice,Drinks,3,5.00,15.00,Debit Card,4

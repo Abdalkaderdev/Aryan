@@ -1,0 +1,182 @@
+LESSON 5: DATA ANALYSIS - Become a Data Detective
+==========================================================
+Sorting Filtering and Pivot Tables oh my!
+(Aryan this is where Excel gets actually useful)
+==========================================================
+
+PART A: SORTING DATA (Organizing chaos)
+==========================================================
+
+ONLINE ORDERS DATABASE:
+Order_ID,Customer,Product,Amount,Date,City,Status
+1001,Aryan,Laptop,75000,01-Jan-2024,Mumbai,Delivered
+1002,Sara,Headphones,2500,03-Jan-2024,Delhi,Delivered
+1003,Omar,Mouse,800,05-Jan-2024,Mumbai,Pending
+1004,Fatima,Keyboard,1500,07-Jan-2024,Bangalore,Delivered
+1005,Ali,Monitor,15000,10-Jan-2024,Delhi,Shipped
+1006,Aryan,USB Cable,300,12-Jan-2024,Mumbai,Delivered
+1007,Sara,Laptop Stand,1800,15-Jan-2024,Delhi,Pending
+1008,Omar,Webcam,3500,18-Jan-2024,Mumbai,Delivered
+1009,Fatima,Mousepad,500,20-Jan-2024,Bangalore,Shipped
+1010,Ali,SSD,8000,22-Jan-2024,Delhi,Delivered
+1011,Aryan,RAM,4500,25-Jan-2024,Mumbai,Pending
+1012,Sara,Cooling Pad,2000,28-Jan-2024,Delhi,Delivered
+
+HOW TO SORT:
+1. Select your data (Ctrl+A or click any cell in data)
+2. Go to Data tab > Sort
+3. Choose column to sort by
+4. Choose A to Z or Z to A (or smallest to largest)
+
+TRY THESE SORTS:
+- Sort by Amount (highest to lowest) - Find the big spenders!
+- Sort by Date (oldest to newest) - Timeline view!
+- Sort by Customer then Amount - Multi-level sorting!
+
+==========================================================
+PART B: FILTERING DATA (Finding the needle in haystack)
+==========================================================
+
+HOW TO FILTER:
+1. Select your data
+2. Go to Data tab > Filter (or Ctrl+Shift+L)
+3. Click the dropdown arrows in headers
+4. Select what you want to see
+
+FILTER CHALLENGES:
+1. Show only Aryan's orders (she shops a lot!)
+2. Show orders > 5000 (big purchases only)
+3. Show Pending orders (what's taking so long?!)
+4. Show Mumbai + Delivered orders (combine filters!)
+
+==========================================================
+PART C: CONDITIONAL FORMATTING (Making data pretty)
+==========================================================
+
+Go to: Home > Conditional Formatting
+
+IDEAS TO TRY:
+1. Highlight amounts > 5000 in GREEN (big orders)
+2. Highlight "Pending" status in RED (needs attention!)
+3. Use Data Bars for Amount column (visual comparison)
+4. Color scale for dates (gradient effect)
+
+==========================================================
+PART D: COUNTIF & SUMIF (Smart counting & adding)
+==========================================================
+
+ANALYSIS QUESTIONS:
+
+How many orders from Mumbai?
+=COUNTIF(F2:F13,"Mumbai")
+
+How many orders > 5000?
+=COUNTIF(D2:D13,">5000")
+
+Total sales in Delhi?
+=SUMIF(F2:F13,"Delhi",D2:D13)
+
+Total of Aryan's orders?
+=SUMIF(B2:B13,"Aryan",D2:D13)
+
+Average order from Mumbai?
+=AVERAGEIF(F2:F13,"Mumbai",D2:D13)
+
+Count Delivered orders?
+=COUNTIF(G2:G13,"Delivered")
+
+==========================================================
+PART D2: COUNTIFS & SUMIFS (Multiple Criteria - Level Up!)
+==========================================================
+When one condition isn't enough - use the S versions!
+
+COUNTIFS - Count with MULTIPLE conditions:
+
+Count Aryan's Delivered orders:
+=COUNTIFS(B2:B13,"Aryan",G2:G13,"Delivered")
+
+Count Mumbai orders over 1000:
+=COUNTIFS(F2:F13,"Mumbai",D2:D13,">1000")
+
+Count Pending orders from Delhi:
+=COUNTIFS(G2:G13,"Pending",F2:F13,"Delhi")
+
+SUMIFS - Sum with MULTIPLE conditions:
+
+Total Aryan's Delivered orders:
+=SUMIFS(D2:D13,B2:B13,"Aryan",G2:G13,"Delivered")
+
+Sum Mumbai orders over 1000:
+=SUMIFS(D2:D13,F2:F13,"Mumbai",D2:D13,">1000")
+
+Sum Pending orders from Delhi:
+=SUMIFS(D2:D13,G2:G13,"Pending",F2:F13,"Delhi")
+
+AVERAGEIFS - Average with MULTIPLE conditions:
+
+Average Delivered order from Mumbai:
+=AVERAGEIFS(D2:D13,F2:F13,"Mumbai",G2:G13,"Delivered")
+
+SYNTAX TIP:
+SUMIFS(sum_range, criteria_range1, criteria1, criteria_range2, criteria2, ...)
+Note: SUMIFS puts the sum range FIRST (different from SUMIF!)
+
+==========================================================
+PART E: PIVOT TABLES (The Ultimate Boss Move)
+==========================================================
+
+HOW TO CREATE:
+1. Select your data
+2. Insert > PivotTable
+3. Choose where to put it
+4. Drag and drop fields!
+
+PIVOT TABLE IDEAS:
+
+PIVOT 1: Sales by City
+- Rows: City
+- Values: Sum of Amount
+
+PIVOT 2: Orders by Customer
+- Rows: Customer
+- Values: Count of Order_ID & Sum of Amount
+
+PIVOT 3: Status Summary
+- Rows: Status
+- Values: Count of Order_ID
+
+PIVOT 4: Monthly Sales by City
+- Rows: City
+- Columns: Date (grouped by month)
+- Values: Sum of Amount
+
+==========================================================
+QUICK ANALYSIS REPORT:
+==========================================================
+(Fill these using the formulas you learned!)
+
+Total Orders:,=COUNTA(A2:A13)
+Total Revenue:,=SUM(D2:D13)
+Average Order Value:,=AVERAGE(D2:D13)
+Highest Order:,=MAX(D2:D13)
+Lowest Order:,=MIN(D2:D13)
+Orders from Mumbai:,=COUNTIF(F2:F13,"Mumbai")
+Pending Orders:,=COUNTIF(G2:G13,"Pending")
+Aryan Total Spent:,=SUMIF(B2:B13,"Aryan",D2:D13)
+Aryan's Delivered Orders Total:,=SUMIFS(D2:D13,B2:B13,"Aryan",G2:G13,"Delivered")
+Mumbai Delivered Count:,=COUNTIFS(F2:F13,"Mumbai",G2:G13,"Delivered")
+
+==========================================================
+DETECTIVE CHALLENGE:
+==========================================================
+Using this data answer:
+1. Who is the biggest spender? (Sort or SUMIF)
+2. Which city has most orders? (COUNTIF or Pivot)
+3. What's the average pending order value? (AVERAGEIF)
+4. How much did Aryan spend on Delivered items only? (SUMIFS!)
+5. How many orders over 2000 are still Pending? (COUNTIFS!)
+
+Congratulations Aryan - you're now a Data Analyst!
+(Put it on your LinkedIn immediately)
+
+Next Lesson: Charts - Making your data look Instagram-worthy!

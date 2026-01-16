@@ -1,0 +1,124 @@
+ARYAN'S ULTIMATE EXCEL FORMULA CHEATSHEET
+==========================================================
+Print this and stick it on your wall bestie!
+==========================================================
+
+NOTE: This cheatsheet uses commas as separators (English/US Excel standard).
+If your Excel uses semicolons (common in Europe, India, and other regions),
+just swap the commas for semicolons in the formulas below!
+
+CATEGORY,FORMULA,WHAT IT DOES,EXAMPLE
+==========================================================
+
+MATH & STATS:
+,=SUM(range),Adds all numbers,=SUM(A1:A10)
+,=AVERAGE(range),Finds the average,=AVERAGE(B1:B20)
+,=COUNT(range),Counts numbers only,=COUNT(C1:C30)
+,=COUNTA(range),Counts non-empty cells,=COUNTA(D1:D40)
+,=MAX(range),Finds highest value,=MAX(E1:E50)
+,=MIN(range),Finds lowest value,=MIN(F1:F60)
+,=ROUND(number, decimals),Rounds a number,=ROUND(A1,2)
+,=SUMPRODUCT(array1, array2),Multiplies arrays and sums,=SUMPRODUCT(A1:A10,B1:B10)
+
+LOGIC:
+,=IF(test, true, false),Checks condition,=IF(A1>50,"Pass","Fail")
+,=AND(test1, test2),Both must be true,=AND(A1>0,B1>0)
+,=OR(test1, test2),Either can be true,=OR(A1>0,B1>0)
+,=NOT(test),Reverses logic,=NOT(A1>0)
+,=IFERROR(formula, if_error),Handles errors,=IFERROR(A1/B1,"Error")
+
+LOOKUP:
+,=VLOOKUP(value, table, col, match),Finds value in table,=VLOOKUP(A1,$D$1:$F$10,2,FALSE)
+,=HLOOKUP(value, table, row, match),Horizontal lookup,=HLOOKUP(A1,$A$1:$F$3,2,FALSE)
+,=INDEX(range, row, col),Returns cell value,=INDEX(A1:C10,2,3)
+,=MATCH(value, range, type),Finds position,=MATCH("Apple",A1:A10,0)
+,=XLOOKUP(value, lookup, return),Modern lookup (365 only),=XLOOKUP(A1,B:B,C:C)
+
+TEXT:
+,=LEFT(text, n),First n characters,=LEFT(A1,5)
+,=RIGHT(text, n),Last n characters,=RIGHT(A1,5)
+,=MID(text, start, n),Middle characters,=MID(A1,3,5)
+,=LEN(text),Character count,=LEN(A1)
+,=TRIM(text),Removes extra spaces,=TRIM(A1)
+,=UPPER(text),UPPERCASE,=UPPER(A1)
+,=LOWER(text),lowercase,=LOWER(A1)
+,=PROPER(text),Title Case,=PROPER(A1)
+,=CONCAT(text1, text2),Joins text,=CONCAT(A1," ",B1)
+,=SUBSTITUTE(text, old, new),Replaces text,=SUBSTITUTE(A1,"old","new")
+
+DATE & TIME:
+,=TODAY(),Current date,=TODAY()
+,=NOW(),Current date & time,=NOW()
+,=YEAR(date),Extracts year,=YEAR(A1)
+,=MONTH(date),Extracts month,=MONTH(A1)
+,=DAY(date),Extracts day,=DAY(A1)
+,=DATEDIF(start, end, unit),Date difference,=DATEDIF(A1,B1,"Y")
+,=NETWORKDAYS(start, end),Work days count,=NETWORKDAYS(A1,B1)
+,=EOMONTH(date, months),End of month,=EOMONTH(A1,0)
+
+CONDITIONAL:
+,=COUNTIF(range, criteria),Count if matches,=COUNTIF(A1:A100,">50")
+,=SUMIF(range, criteria, sum_range),Sum if matches,=SUMIF(A:A,"Apple",B:B)
+,=AVERAGEIF(range, criteria, avg_range),Average if matches,=AVERAGEIF(A:A,"Apple",B:B)
+,=COUNTIFS(range1, criteria1, ...),Multiple conditions,=COUNTIFS(A:A,"Apple",B:B,">10")
+,=SUMIFS(sum_range, range1, criteria1),Multiple conditions,=SUMIFS(C:C,A:A,"Apple",B:B,">10")
+
+FINANCIAL:
+,=PMT(rate, periods, pv),Loan EMI,=PMT(10%/12,36,-500000)
+,=FV(rate, periods, pmt, pv),Future value,=FV(12%/12,60,-5000,-100000)
+,=PV(rate, periods, pmt, fv),Present value,=PV(10%/12,36,-16000)
+,=NPV(rate, values),Net present value,=NPV(10%,B1:B5)
+,=IRR(values),Internal return rate,=IRR(A1:A10)
+
+==========================================================
+EXCEL 365 MODERN FORMULAS (Requires Microsoft 365!)
+==========================================================
+These awesome new formulas only work in Excel 365 or Excel Online.
+If you have an older version, they won't be available - sorry!
+
+,=XLOOKUP(lookup, lookup_array, return_array),Better VLOOKUP!,=XLOOKUP(A1,B:B,C:C,"Not found")
+,=UNIQUE(range),Returns unique values only,=UNIQUE(A1:A100)
+,=FILTER(array, include),Filters based on criteria,=FILTER(A1:C10,B1:B10>50)
+,=SORT(array, sort_index, order),Sorts your data,=SORT(A1:C10,2,-1)
+
+Why these are amazing:
+- XLOOKUP: No more remembering column numbers or FALSE for exact match!
+- UNIQUE: Instantly get a list of distinct values - no duplicates!
+- FILTER: Create dynamic filtered lists that update automatically!
+- SORT: Sort data with a formula instead of manually!
+
+==========================================================
+IMPORTANT NOTES:
+==========================================================
+1. This cheatsheet uses commas (US/English Excel standard)
+2. Your Excel might use semicolons instead (check your regional settings!)
+3. $ locks cell reference: $A$1 (press F4 to toggle)
+4. FALSE = exact match, TRUE = approximate match
+5. Range format: A1:B10 means from A1 to B10
+6. Named ranges make formulas easier to read!
+
+==========================================================
+COMMON ERRORS:
+==========================================================
+#VALUE! = Wrong data type
+#REF! = Invalid cell reference
+#N/A = Value not found
+#DIV/0! = Division by zero
+#NAME? = Formula name wrong
+#NULL! = Wrong range reference
+#NUM! = Invalid number
+
+Fix with: =IFERROR(your_formula, "Error message")
+
+==========================================================
+PRO TIP: Nesting Formulas
+==========================================================
+You can put formulas inside formulas!
+
+Example: =IF(VLOOKUP(A1,Table,2,FALSE)>100,"High","Low")
+
+This looks up a value AND checks if it's high or low!
+
+==========================================================
+YOU GOT THIS ARYAN!
+==========================================================

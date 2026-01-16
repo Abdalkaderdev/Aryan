@@ -1,0 +1,109 @@
+FINANCIAL ANALYSIS TEMPLATE
+==========================================================
+For when you need to look like you know finance
+(Fake it till you make it Aryan)
+==========================================================
+
+PART A: PROFIT & LOSS STATEMENT
+==========================================================
+
+Category,Jan,Feb,Mar,Q1 Total
+REVENUE:,,,,
+Product Sales,50000,55000,60000,=SUM(B12:D12)
+Service Revenue,20000,22000,25000,=SUM(B13:D13)
+Other Income,5000,5000,5000,=SUM(B14:D14)
+TOTAL REVENUE,=SUM(B12:B14),=SUM(C12:C14),=SUM(D12:D14),=SUM(E12:E14)
+
+EXPENSES:,,,,
+Cost of Goods,25000,27000,29000,=SUM(B18:D18)
+Salaries,15000,15000,15000,=SUM(B19:D19)
+Rent,5000,5000,5000,=SUM(B20:D20)
+Marketing,3000,4000,5000,=SUM(B21:D21)
+Utilities,2000,2000,2000,=SUM(B22:D22)
+Other Expenses,2000,2500,3000,=SUM(B23:D23)
+TOTAL EXPENSES,=SUM(B18:B23),=SUM(C18:C23),=SUM(D18:D23),=SUM(E18:E23)
+
+NET PROFIT,=B15-B24,=C15-C24,=D15-D24,=E15-E24
+Profit Margin %,=B26/B15*100,=C26/C15*100,=D26/D15*100,=E26/E15*100
+
+==========================================================
+PART B: LOAN EMI CALCULATOR
+==========================================================
+
+Loan Amount:,500000
+Interest Rate (Annual):,10%
+Loan Term (Months):,36
+Monthly EMI:,=PMT(B34/12,B35,-B33)
+
+Explanation: EMI = PMT(rate/12, months, -principal)
+
+AMORTIZATION SCHEDULE:
+Month,Opening Balance,EMI,Interest,Principal,Closing Balance
+1,=B33,=$B$36,=B42*$B$34/12,=C42-D42,=B42-E42
+2,=F42,=$B$36,=B43*$B$34/12,=C43-D43,=B43-E43
+3,=F43,=$B$36,=B44*$B$34/12,=C44-D44,=B44-E44
+(Continue for all months - each row uses previous row's Closing as Opening)
+
+==========================================================
+PART C: INVESTMENT RETURNS (Compound Interest Magic)
+==========================================================
+
+Initial Investment:,100000
+Monthly Addition:,5000
+Annual Return %:,12%
+Investment Period (Years):,5
+
+Future Value:,=FV(B53/12,B54*12,-B52,-B51)
+
+YEAR BY YEAR GROWTH:
+Year,Start Value,Added,Interest Earned,End Value
+1,=B51,=B52*12,=(B60+C60)*B53,=B60+C60+D60
+2,=E60,=B52*12,=(B61+C61)*B53,=B61+C61+D61
+3,=E61,=B52*12,=(B62+C62)*B53,=B62+C62+D62
+4,=E62,=B52*12,=(B63+C63)*B53,=B63+C63+D63
+5,=E63,=B52*12,=(B64+C64)*B53,=B64+C64+D64
+
+==========================================================
+PART D: BREAK-EVEN ANALYSIS
+==========================================================
+
+Fixed Costs (monthly):,50000
+Variable Cost per Unit:,100
+Selling Price per Unit:,250
+Contribution Margin:,=B72-B71
+Break-Even Units:,=B70/B73
+Break-Even Revenue:,=B74*B72
+
+What this means:
+You need to sell,=B74,units to cover costs
+After that every sale is pure profit!
+
+==========================================================
+PART E: RATIO ANALYSIS (Impress the investors)
+==========================================================
+
+CURRENT ASSETS,500000
+CURRENT LIABILITIES,200000
+TOTAL ASSETS,1000000
+TOTAL LIABILITIES,400000
+TOTAL EQUITY,600000
+NET PROFIT,150000
+REVENUE,1000000
+
+KEY RATIOS:
+Current Ratio,=B85/B86,Good if > 1.5
+Debt to Equity,=B88/B89,Lower is better
+Return on Equity (ROE),=B90/B89*100,Higher is better
+Profit Margin,=B90/B91*100,Higher is better
+Asset Turnover,=B91/B87,Higher means efficient
+
+==========================================================
+FINANCIAL FORMULAS CHEAT SHEET:
+==========================================================
+=PMT(rate,periods,principal) - Loan EMI calculator
+=FV(rate,periods,payment,present_value) - Future value
+=PV(rate,periods,payment,future_value) - Present value
+=RATE(periods,payment,present_value,future_value) - Interest rate
+=NPER(rate,payment,present_value,future_value) - Number of periods
+
+You're basically a CFO now. Congratulations!

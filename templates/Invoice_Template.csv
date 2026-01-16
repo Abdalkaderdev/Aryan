@@ -1,0 +1,95 @@
+INVOICE
+==========================================================
+
+INVOICE NUMBER:,INV-001
+DATE:,=TODAY()
+DUE DATE:,=B5+30
+
+==========================================================
+FROM (Your Business):
+==========================================================
+Business Name:,Aryan Enterprises
+Address:,Your Street Address
+City:,Your City
+Phone:,+91 XXXXXXXXXX
+Email:,aryan@business.com
+GST Number:,XXXXXXXXXXXXXXX
+
+==========================================================
+BILL TO (Client):
+==========================================================
+Client Name:,Client Company Name
+Contact Person:,
+Address:,
+City:,
+Phone:,
+Email:,
+
+==========================================================
+INVOICE DETAILS:
+==========================================================
+
+Sr No,Description,Quantity,Unit Price,Amount
+1,Service/Product Description Here,1,0,=C33*D33
+2,,1,0,=C34*D34
+3,,1,0,=C35*D35
+4,,1,0,=C36*D36
+5,,1,0,=C37*D37
+
+==========================================================
+
+,,,Subtotal:,=SUM(E33:E37)
+,,,GST (18%):,=E41*0.18
+,,,Discount:,0
+,,,TOTAL:,=E41+E42-E43
+
+==========================================================
+PAYMENT DETAILS:
+==========================================================
+Bank Name:,Your Bank Name
+Account Number:,XXXXXXXXXXXX
+IFSC Code:,XXXXXXXXXXX
+UPI ID:,yourupi@bank
+
+==========================================================
+TERMS & CONDITIONS:
+==========================================================
+1. Payment due within 30 days of invoice date
+2. Late payments subject to 2% monthly interest
+3. Please include invoice number in payment reference
+
+==========================================================
+THANK YOU FOR YOUR BUSINESS!
+==========================================================
+
+Questions? Contact us at aryan@business.com
+
+==========================================================
+FORMULA GUIDE (Delete this section before sending):
+==========================================================
+This template uses Excel formulas to auto-calculate values!
+
+DATE FORMULAS:
+- Date (Row 5): =TODAY() gives you today's date automatically
+- Due Date (Row 6): =B5+30 adds 30 days to the invoice date
+
+LINE ITEM FORMULAS (Rows 33-37):
+- Amount = Quantity * Unit Price
+- Row 33: =C33*D33
+- Row 34: =C34*D34
+- Row 35: =C35*D35
+- Row 36: =C36*D36
+- Row 37: =C37*D37
+
+TOTALS FORMULAS (Rows 41-44):
+- Subtotal (Row 41): =SUM(E33:E37) adds up all Amount values
+- GST 18% (Row 42): =E41*0.18 calculates 18% of Subtotal
+- Discount (Row 43): Enter manually (default 0)
+- Total (Row 44): =E41+E42-E43 (Subtotal + GST - Discount)
+
+PRO TIPS:
+- Change invoice number for each new invoice
+- Add more line items by inserting rows and updating formulas
+- Save as PDF before sending (File > Save As > PDF)
+- Keep a copy for your records
+- Track all invoices in a separate sheet

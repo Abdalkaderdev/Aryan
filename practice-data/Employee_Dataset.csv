@@ -1,0 +1,21 @@
+Employee_ID,Name,Department,Position,Join_Date,Salary,Performance_Score,Projects_Completed,Attendance_%,City,Manager
+E001,Aryan Khan,Marketing,Manager,2019-03-15,85000,92,15,98,Mumbai,
+E002,Sara Ahmed,Engineering,Senior Developer,2020-06-01,75000,88,12,95,Delhi,E001
+E003,Omar Ali,Sales,Sales Executive,2021-01-10,45000,78,8,92,Mumbai,E007
+E004,Fatima Hassan,HR,HR Specialist,2020-09-20,55000,85,10,97,Bangalore,E010
+E005,Ali Raza,Engineering,Developer,2022-02-15,55000,82,7,94,Delhi,E002
+E006,Zara Khan,Marketing,Marketing Executive,2021-07-01,48000,90,9,96,Mumbai,E001
+E007,Ahmed Hassan,Sales,Sales Manager,2018-11-05,78000,87,18,93,Chennai,
+E008,Priya Singh,Finance,Accountant,2020-04-12,52000,84,11,99,Mumbai,E009
+E009,Rahul Verma,Finance,Finance Manager,2017-08-20,92000,91,22,97,Delhi,
+E010,Sneha Patel,HR,HR Manager,2018-05-10,88000,89,20,98,Bangalore,
+E011,Karan Sharma,Engineering,Junior Developer,2023-01-15,38000,75,4,90,Delhi,E002
+E012,Neha Gupta,Marketing,Content Writer,2022-06-20,42000,86,6,95,Mumbai,E001
+E013,Vikram Reddy,Sales,Sales Executive,2021-03-08,46000,80,9,91,Chennai,E007
+E014,Anita Desai,Engineering,QA Engineer,2020-11-25,50000,83,8,96,Bangalore,E002
+E015,Rajesh Kumar,Finance,Junior Accountant,2023-03-01,35000,77,3,93,Delhi,E008
+E016,Meera Nair,HR,Recruiter,2022-09-10,40000,81,5,94,Mumbai,E010
+E017,Suresh Iyer,Engineering,DevOps Engineer,2021-05-18,68000,88,11,97,Bangalore,E002
+E018,Pooja Sharma,Marketing,Social Media Manager,2022-01-05,52000,87,8,95,Delhi,E001
+E019,Arun Menon,Sales,Senior Sales Executive,2019-07-22,58000,85,14,92,Chennai,E007
+E020,Divya Kapoor,Finance,Financial Analyst,2021-08-15,62000,90,10,98,Mumbai,E009

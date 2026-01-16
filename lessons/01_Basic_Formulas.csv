@@ -1,0 +1,67 @@
+LESSON 1: BASIC FORMULAS - Welcome Aryan!
+==========================================================
+Yes this is your Excel bootcamp. No you cannot escape.
+Coffee recommended. Snacks mandatory.
+==========================================================
+
+PART A: CHAI SHOP SALES (very important data)
+==========================================================
+
+Day,Chai Cups Sold,Samosas Sold,Total Items,Revenue (Chai=10 Samosa=15)
+Monday,45,20,,
+Tuesday,52,25,,
+Wednesday,38,18,,
+Thursday,60,30,,
+Friday,75,40,,
+Saturday,90,50,,
+Sunday,85,45,,
+
+YOUR MISSION (should you choose to accept it):
+Calculate TOTAL ITEMS using: =B2+C2
+Calculate REVENUE using: =(B2*10)+(C2*15)
+
+Weekly Totals:
+Total Chai Sold:,=SUM(B2:B8) <-- try this!
+Total Samosas:,=SUM(C2:C8)
+Average Daily Chai:,=AVERAGE(B2:B8)
+Best Day (MAX):,=MAX(B2:B8)
+Worst Day (MIN):,=MIN(B2:B8)
+
+==========================================================
+PART B: ARYAN'S NETFLIX WATCH TIME (no judgment zone)
+==========================================================
+
+Show,Hours Watched,Episodes,Rating (1-10)
+Money Heist,45,41,9
+Stranger Things,32,34,8
+Wednesday,8,8,7
+Squid Game,9,9,10
+The Office,120,201,9
+Friends,85,236,8
+
+CALCULATE:
+Total Hours Wasted (I mean invested):,=SUM(B35:B40)
+Average Rating:,=AVERAGE(D35:D40)
+Most Binged Show:,=MAX(B35:B40)
+Total Episodes:,=SUM(C35:C40)
+
+==========================================================
+FORMULA CHEAT SHEET (screenshot this bestie):
+==========================================================
+=SUM(A1:A10) --> Adds everything up
+=AVERAGE(A1:A10) --> Middle ground finder
+=COUNT(A1:A10) --> How many numbers?
+=MAX(A1:A10) --> The winner
+=MIN(A1:A10) --> The loser
+=A1+B1 --> Basic math (you got this)
+=A1*B1 --> Multiplication (still got this)
+
+==========================================================
+HOMEWORK (yes really):
+==========================================================
+1. Calculate how much chai money we're making
+2. Find out which day we need more samosas
+3. Calculate your total Netflix hours (be honest)
+4. Try not to cry when you see the number
+
+Next lesson: IF statements - because life is full of conditions!

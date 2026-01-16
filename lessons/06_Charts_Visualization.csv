@@ -1,0 +1,240 @@
+LESSON 6: CHARTS - Making Data Look Pretty
+==========================================================
+Because nobody reads spreadsheets but everyone loves pictures
+(This is how you impress in presentations Aryan)
+==========================================================
+
+PART A: MONTHLY SALES DATA (Chart Material)
+==========================================================
+
+Month,Online Sales,Store Sales,Total,Target
+January,45000,32000,=B2+C2,50000
+February,52000,28000,=B3+C3,50000
+March,48000,35000,=B4+C4,55000
+April,61000,42000,=B5+C5,55000
+May,58000,38000,=B6+C6,60000
+June,72000,45000,=B7+C7,60000
+
+Total Formula: =B2+C2 (Online + Store Sales)
+
+==========================================================
+CHART TYPE GUIDE (When to use what):
+==========================================================
+
+COLUMN CHART - Comparing categories
+Best for: Monthly sales comparison side by side
+How: Select data > Insert > Column Chart
+
+BAR CHART - Same as column but horizontal
+Best for: When you have long category names
+How: Select data > Insert > Bar Chart
+
+LINE CHART - Showing trends over time
+Best for: Sales growth showing time
+How: Select data > Insert > Line Chart
+
+PIE CHART - Showing parts of a whole (100%)
+Best for: Market share budget breakdown
+How: Select data > Insert > Pie Chart
+WARNING: Only use for 3-6 categories max!
+
+COMBO CHART - Mix of column and line
+Best for: Comparing actual vs target
+How: Select data > Insert > Combo Chart
+
+==========================================================
+PART B: COMBO CHARTS & SECONDARY AXIS (Pro Level!)
+==========================================================
+
+When your data has VERY DIFFERENT scales - use a Secondary Axis!
+
+Example Problem:
+- Sales in Rupees: 45000 to 72000
+- Growth Rate in %: 5% to 15%
+
+If you plot both on same axis the percentages look like a flat line!
+
+HOW TO ADD SECONDARY AXIS:
+1. Create a Combo Chart (Insert > Combo Chart)
+2. Right-click on the data series you want on secondary axis
+3. Select "Format Data Series"
+4. Choose "Secondary Axis"
+5. Now you have two Y-axes - left and right!
+
+COMBO CHART RECIPE:
+- Columns for: Online Sales + Store Sales
+- Line on Secondary Axis for: Target or Growth %
+
+This is how professionals show Actual vs Target!
+(Your boss will think you're a wizard)
+
+==========================================================
+PART C: EXPENSE BREAKDOWN (Pie Chart Perfect)
+==========================================================
+
+Category,Amount,Percentage
+Rent,15000,=B2/SUM($B$2:$B$7)*100
+Food,8000,=B3/SUM($B$2:$B$7)*100
+Transport,3000,=B4/SUM($B$2:$B$7)*100
+Entertainment,5000,=B5/SUM($B$2:$B$7)*100
+Shopping,7000,=B6/SUM($B$2:$B$7)*100
+Savings,12000,=B7/SUM($B$2:$B$7)*100
+
+Percentage Formula: =B2/SUM($B$2:$B$7)*100
+
+Perfect for PIE CHART!
+1. Select Category + Amount columns
+2. Insert > Pie Chart
+3. Add Data Labels (right click > Add Data Labels)
+4. Brag about your savings to friends
+
+==========================================================
+PART D: SPARKLINES (Mini Charts Inside Cells!)
+==========================================================
+
+Sparklines are tiny charts that fit inside a single cell!
+Perfect for showing trends at a glance without taking up space.
+
+SAMPLE DATA FOR SPARKLINES:
+Product,Jan,Feb,Mar,Apr,May,Jun,Trend
+Laptops,150,165,180,175,190,210,
+Phones,280,295,310,305,330,350,
+Tablets,90,88,85,92,105,120,
+
+HOW TO CREATE SPARKLINES:
+1. Click the cell where you want the sparkline (Trend column)
+2. Go to Insert > Sparklines
+3. Choose type: Line Column or Win/Loss
+4. Select your data range (Jan through Jun values)
+5. Click OK - magic mini chart appears!
+
+SPARKLINE TYPES:
+
+LINE SPARKLINE - Shows trend over time
+=SPARKLINE(B2:G2) or Insert > Line Sparkline
+Best for: Seeing if values go up or down
+
+COLUMN SPARKLINE - Mini bar chart
+Insert > Column Sparkline
+Best for: Comparing individual values
+
+WIN/LOSS SPARKLINE - Shows positive/negative
+Insert > Win/Loss Sparkline
+Best for: Showing gains vs losses
+
+SPARKLINE CUSTOMIZATION:
+- Click sparkline > Sparkline tab appears
+- Change color style markers
+- Highlight high/low points
+- Show first/last points differently
+
+Pro Tip: Add sparklines to dashboards for quick visual summaries!
+
+==========================================================
+PART E: CHART CUSTOMIZATION (Make it yours)
+==========================================================
+
+CLICK ON CHART TO CUSTOMIZE:
+
+Chart Title: Click and type (make it descriptive!)
+  Bad: "Chart 1"
+  Good: "Monthly Sales Comparison 2024"
+  Aryan Style: "Look How Much We Made!"
+
+Legend: Shows what each color means
+  Position: Top Right Bottom Left
+
+Axis Titles:
+  X-axis: Usually categories (months products etc)
+  Y-axis: Usually values (rupees counts etc)
+
+Data Labels: Show exact values on chart
+  Right-click bars > Add Data Labels
+
+Colors: Click any bar/slice > Format > Fill Color
+  Pro tip: Use company colors or aesthetic palettes
+
+==========================================================
+PART F: COMPARISON DATA (Column Chart Material)
+==========================================================
+
+Product,Q1 Sales,Q2 Sales,Q3 Sales,Q4 Sales,Total
+Laptops,150,180,165,210,=SUM(B2:E2)
+Phones,280,310,290,350,=SUM(B3:E3)
+Tablets,90,85,95,120,=SUM(B4:E4)
+Accessories,420,480,510,580,=SUM(B5:E5)
+
+Total Formula: =SUM(B2:E2)
+
+CHARTS TO CREATE:
+1. Clustered Column: Compare products across quarters
+2. Stacked Column: See total with breakdown
+3. Line Chart: Show trend for each product
+4. 100% Stacked: Compare proportions
+5. Combo with Sparklines: Full dashboard view!
+
+==========================================================
+PART G: TREND DATA (Line Chart Material)
+==========================================================
+
+Week,Website Visitors,App Downloads,Signups,Conversion Rate
+Week 1,1200,340,89,=D2/B2*100
+Week 2,1450,420,112,=D3/B3*100
+Week 3,1380,385,98,=D4/B4*100
+Week 4,1650,510,145,=D5/B5*100
+Week 5,1890,620,178,=D6/B6*100
+Week 6,2100,750,210,=D7/B7*100
+Week 7,2340,820,245,=D8/B8*100
+Week 8,2580,910,289,=D9/B9*100
+
+Conversion Rate Formula: =D2/B2*100 (Signups/Visitors)
+
+Perfect for LINE CHART!
+Shows the beautiful upward trend
+(Great for impressing your boss)
+
+PRO TIP: Use Combo Chart with Secondary Axis!
+- Lines for Visitors Downloads Signups (left axis - big numbers)
+- Line for Conversion Rate (right axis - small percentages)
+
+==========================================================
+CHART DO's AND DON'Ts:
+==========================================================
+
+DO:
+- Use clear descriptive titles
+- Label your axes
+- Keep it simple
+- Use consistent colors
+- Add data labels for key points
+- Use secondary axis for different scales
+- Add sparklines for quick overviews
+
+DON'T:
+- Use 3D charts (they lie and look dated)
+- Use pie charts for more than 6 categories
+- Use too many colors (rainbow vomit alert)
+- Make tiny unreadable charts
+- Forget to cite your data source
+- Mix scales without secondary axis
+
+==========================================================
+CHART CHALLENGE:
+==========================================================
+
+Create a DASHBOARD with:
+1. Pie chart showing expense breakdown
+2. Line chart showing weekly growth
+3. Column chart comparing quarterly sales
+4. Combo chart with secondary axis (Sales vs Target)
+5. Add sparklines for each product row
+6. Add a title: "Aryan's Amazing Analysis"
+
+Bonus: Use the same color scheme for all charts
+Extra Bonus: Add a company logo (Insert > Picture)
+Super Bonus: Create an interactive dashboard with slicers!
+
+Congratulations! You can now make boring data look exciting!
+(Your presentation game just leveled up)
+
+Next: Business Templates - Real world Excel magic!

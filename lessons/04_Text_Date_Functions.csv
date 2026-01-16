@@ -1,0 +1,145 @@
+LESSON 4: TEXT & DATE FUNCTIONS
+==========================================================
+For when Excel becomes your grammar teacher AND calendar
+==========================================================
+
+PART A: TEXT FUNCTIONS (Fixing messy data like fixing bad hair days)
+==========================================================
+
+MESSY CONTACT LIST:
+Full_Name,First_Name,Last_Name,Email_Fix,Proper_Name
+aryan khan,,,,
+SARA AHMED,,,,
+  omar ali  ,,,,
+fatima HASSAN,,,,
+
+FORMULAS TO CLEAN THIS MESS:
+First Name: =LEFT(A2,FIND(" ",A2)-1)
+Last Name: =RIGHT(A2,LEN(A2)-FIND(" ",A2))
+Proper Case: =PROPER(A2) --> "Aryan Khan" (fancy!)
+Upper Case: =UPPER(A2) --> "ARYAN KHAN" (SHOUTING)
+Lower Case: =LOWER(A2) --> "aryan khan" (whispering)
+Remove Spaces: =TRIM(A2) --> Goodbye extra spaces!
+
+IFERROR FOR SAFE NAME EXTRACTION:
+==========================================================
+Sometimes names don't have spaces (oops!) - IFERROR saves the day!
+
+Safe First Name: =IFERROR(LEFT(A2,FIND(" ",A2)-1),A2)
+  (If no space found, returns the whole name)
+
+Safe Last Name: =IFERROR(RIGHT(A2,LEN(A2)-FIND(" ",A2)),"")
+  (If no space found, returns empty instead of error)
+
+Extract Domain from Email: =IFERROR(MID(A2,FIND("@",A2)+1,100),"No email")
+  (If no @ found, shows "No email" instead of #VALUE!)
+
+Pro Tip: Always wrap FIND and MID in IFERROR for real-world data!
+
+==========================================================
+PART B: CONCATENATE (Joining text like joining friend groups)
+==========================================================
+
+First,Last,Full_Name,Email_Generator,Greeting
+Aryan,Khan,,,
+Sara,Ahmed,,,
+Omar,Ali,,,
+
+Full Name: =A2&" "&B2 OR =CONCAT(A2," ",B2)
+Email: =LOWER(A2)&"."&LOWER(B2)&"@company.com"
+Greeting: ="Hello "&A2&"! Welcome to the Excel gang!"
+
+==========================================================
+PART C: DATE FUNCTIONS (Time flies but Excel tracks it)
+==========================================================
+
+IMPORTANT DATES:
+Event,Date,Days_Until,Day_Name,Month_Name
+Aryan's Birthday,15-Mar-2024,,,
+Exam Day,20-Apr-2024,,,
+Vacation Start,01-Jun-2024,,,
+Project Deadline,10-Feb-2024,,,
+
+Days Until: =B2-TODAY() (negative means you missed it oops)
+Day Name: =TEXT(B2,"dddd") --> "Friday"
+Month Name: =TEXT(B2,"mmmm") --> "March"
+Year: =YEAR(B2)
+Month Number: =MONTH(B2)
+Day Number: =DAY(B2)
+
+TODAY(): =TODAY() --> Current date (updates automatically!)
+NOW(): =NOW() --> Current date AND time (fancy)
+
+==========================================================
+PART D: AGE CALCULATOR (For birthday roasts)
+==========================================================
+
+Name,Birthdate,Age_Years,Age_Days,Next_Birthday_In
+Aryan,15-Mar-2000,,,
+Friend1,22-Jul-1999,,,
+Friend2,08-Jan-2001,,,
+
+Age in Years: =DATEDIF(B2,TODAY(),"Y")
+Age in Months: =DATEDIF(B2,TODAY(),"M")
+Age in Days: =DATEDIF(B2,TODAY(),"D") (for dramatic effect)
+
+SMART Birthday Countdown (handles past birthdays!):
+=IF(DATE(YEAR(TODAY()),MONTH(B2),DAY(B2))>=TODAY(),
+    DATE(YEAR(TODAY()),MONTH(B2),DAY(B2))-TODAY(),
+    DATE(YEAR(TODAY())+1,MONTH(B2),DAY(B2))-TODAY())
+
+How this works:
+1. First checks if birthday this year hasn't happened yet
+2. If birthday is coming: calculates days until this year's birthday
+3. If birthday passed: calculates days until NEXT year's birthday
+4. Result is always a positive number of days to wait!
+
+Alternative Shorter Version:
+=DATE(YEAR(TODAY())+IF(DATE(YEAR(TODAY()),MONTH(B2),DAY(B2))<TODAY(),1,0),MONTH(B2),DAY(B2))-TODAY()
+
+==========================================================
+PART E: WORK DAYS CALCULATOR (Surviving corporate life)
+==========================================================
+
+Project,Start_Date,End_Date,Total_Days,Work_Days_Only
+Website Redesign,01-Jan-2024,31-Jan-2024,,
+App Launch,15-Feb-2024,15-Mar-2024,,
+Report,01-Mar-2024,10-Mar-2024,,
+
+Total Days: =C2-B2
+Work Days Only: =NETWORKDAYS(B2,C2) (excludes weekends!)
+With Holidays: =NETWORKDAYS(B2,C2,Holiday_List)
+
+==========================================================
+TEXT FORMULA CHEAT SHEET:
+==========================================================
+=LEN(A1) --> Length of text (character count)
+=LEFT(A1,5) --> First 5 characters
+=RIGHT(A1,5) --> Last 5 characters
+=MID(A1,3,5) --> 5 characters starting from position 3
+=FIND("@",A1) --> Position of @ symbol
+=SUBSTITUTE(A1,"old","new") --> Replace text
+=TRIM(A1) --> Remove extra spaces
+=PROPER(A1) --> Title Case
+=UPPER(A1) --> UPPERCASE
+=LOWER(A1) --> lowercase
+
+IFERROR CHEAT SHEET:
+==========================================================
+=IFERROR(formula,"Fallback") --> Shows "Fallback" if formula errors
+=IFERROR(A1/B1,0) --> Returns 0 instead of #DIV/0! error
+=IFERROR(VLOOKUP(...),"Not Found") --> Handles missing lookups
+=IFERROR(LEFT(A1,FIND(" ",A1)-1),A1) --> Safe text extraction
+
+==========================================================
+CHALLENGE: Create a Birthday Countdown Dashboard!
+==========================================================
+1. Enter friend birthdays
+2. Auto-calculate days until each birthday (using the SMART formula!)
+3. Show message: =IF(days<=7,"Coming up!","Mark your calendar")
+4. Generate birthday greeting message
+5. Use IFERROR to handle any weird date formats!
+
+Pro tip: Combine IF with date functions for extra power!
+
+Next Lesson: Data Analysis - Becoming a Data Detective!

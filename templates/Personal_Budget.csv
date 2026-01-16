@@ -1,0 +1,90 @@
+ARYAN'S PERSONAL BUDGET TRACKER
+==========================================================
+Because adulting requires spreadsheets apparently
+==========================================================
+
+MONTHLY INCOME:
+Source,Amount
+Salary,0
+Freelance,0
+Side Hustle,0
+Gift from Parents (no shame),0
+Other,0
+TOTAL INCOME:,=SUM(B8:B12)
+
+==========================================================
+MONTHLY EXPENSES:
+==========================================================
+
+FIXED EXPENSES (The unavoidables):
+Category,Budgeted,Actual,Difference,Status
+Rent/EMI,0,0,=B21-C21,=IF(D21>=0,"Under Budget","OVERSPENT!")
+Utilities (Electric/Water),0,0,=B22-C22,=IF(D22>=0,"Under Budget","OVERSPENT!")
+Phone/Internet,0,0,=B23-C23,=IF(D23>=0,"Under Budget","OVERSPENT!")
+Insurance,0,0,=B24-C24,=IF(D24>=0,"Under Budget","OVERSPENT!")
+Subscriptions (Netflix etc),0,0,=B25-C25,=IF(D25>=0,"Under Budget","OVERSPENT!")
+FIXED TOTAL:,=SUM(B21:B25),=SUM(C21:C25),=B26-C26,
+
+VARIABLE EXPENSES (The fun stuff):
+Category,Budgeted,Actual,Difference,Status
+Groceries/Food,0,0,=B30-C30,=IF(D30>=0,"Under Budget","OVERSPENT!")
+Transport/Fuel,0,0,=B31-C31,=IF(D31>=0,"Under Budget","OVERSPENT!")
+Eating Out,0,0,=B32-C32,=IF(D32>=0,"Under Budget","OVERSPENT!")
+Shopping (be honest),0,0,=B33-C33,=IF(D33>=0,"Under Budget","OVERSPENT!")
+Entertainment,0,0,=B34-C34,=IF(D34>=0,"Under Budget","OVERSPENT!")
+Personal Care,0,0,=B35-C35,=IF(D35>=0,"Under Budget","OVERSPENT!")
+Gifts,0,0,=B36-C36,=IF(D36>=0,"Under Budget","OVERSPENT!")
+Miscellaneous,0,0,=B37-C37,=IF(D37>=0,"Under Budget","OVERSPENT!")
+VARIABLE TOTAL:,=SUM(B30:B37),=SUM(C30:C37),=B38-C38,
+
+==========================================================
+SAVINGS GOALS (Future Aryan will thank you):
+==========================================================
+
+Goal,Target Amount,Saved So Far,Remaining,Progress %
+Emergency Fund,50000,0,=B45-C45,=IF(B45>0,C45/B45*100,0)
+Vacation Fund,30000,0,=B46-C46,=IF(B46>0,C46/B46*100,0)
+New Phone,25000,0,=B47-C47,=IF(B47>0,C47/B47*100,0)
+Investment,20000,0,=B48-C48,=IF(B48>0,C48/B48*100,0)
+TOTAL SAVINGS:,=SUM(B45:B48),=SUM(C45:C48),=B49-C49,=IF(B49>0,C49/B49*100,0)
+
+==========================================================
+MONTHLY SUMMARY:
+==========================================================
+
+Total Income:,=B13
+Total Fixed Expenses:,=C26
+Total Variable Expenses:,=C38
+Total Expenses:,=B56+B57
+Money Left Over:,=B55-B58
+Savings This Month:,=C49
+
+VERDICT:,=IF(B58>0,"You're doing great bestie!","Houston we have a problem")
+
+==========================================================
+DAILY EXPENSE TRACKER:
+==========================================================
+
+Date,Description,Category,Amount,Payment Method
+,,,0,
+,,,0,
+,,,0,
+,,,0,
+,,,0,
+,,,0,
+,,,0,
+(Add more rows as needed)
+
+DAILY TOTAL:,,,=SUM(D69:D75),
+
+==========================================================
+TIPS FOR ARYAN:
+==========================================================
+1. Track expenses DAILY (yes every chai counts)
+2. Review weekly to stay on track
+3. The 50/30/20 rule: 50% needs 30% wants 20% savings
+4. Set up automatic transfers to savings
+5. Treat yourself but within budget!
+6. If over budget cut from shopping not food (priorities!)
+
+You got this!

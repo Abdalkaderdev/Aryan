@@ -1,0 +1,105 @@
+LESSON 3: VLOOKUP - The Detective of Excel
+==========================================================
+Finding data like finding your phone in your hand
+(We've all been there Aryan don't lie)
+==========================================================
+
+PART A: PRODUCT PRICE LOOKUP (Shopping Assistant)
+==========================================================
+
+PRODUCT DATABASE (Your Lookup Table):
+Product_ID,Product_Name,Price,Category
+P001,Wireless Earbuds,2500,Electronics
+P002,Phone Case,450,Accessories
+P003,Laptop Stand,1800,Electronics
+P004,Notebook Set,350,Stationery
+P005,Water Bottle,600,Lifestyle
+P006,Desk Lamp,1200,Home
+P007,USB Hub,900,Electronics
+P008,Planner 2024,500,Stationery
+
+SHOPPING CART (Use VLOOKUP here):
+Order_ID,Product_ID,Product_Name (VLOOKUP),Price (VLOOKUP),Quantity,Total
+1,P003,,,2,
+2,P001,,,1,
+3,P005,,,3,
+4,P002,,,2,
+
+VLOOKUP FORMULA:
+=VLOOKUP(B2,$A$2:$D$9,2,FALSE) --> Gets Product Name
+=VLOOKUP(B2,$A$2:$D$9,3,FALSE) --> Gets Price
+
+BREAKDOWN (because I know you're confused):
+- B2 = What you're looking for (Product_ID)
+- $A$2:$D$9 = Where to look (the table) - $ signs lock it!
+- 2 or 3 = Which column to return (2=name, 3=price)
+- FALSE = Exact match (always use this trust me)
+
+==========================================================
+PART B: FRIEND'S BIRTHDAY DATABASE (Never forget again!)
+==========================================================
+
+BIRTHDAY DATABASE:
+Name,Birthday,Gift Idea,Budget
+Aryan,15-March,Books & Coffee,2000
+BFF_Sara,22-July,Skincare,1500
+Bestie_Omar,08-January,Gaming Stuff,2500
+Work_Friend,30-November,Gift Card,500
+Cousin_Ali,14-February,Chocolate,800
+
+LOOKUP TABLE:
+Enter Name Here:,Aryan
+Birthday:,=VLOOKUP(B11,A2:D6,2,FALSE)
+Gift Idea:,=VLOOKUP(B11,A2:D6,3,FALSE)
+Budget:,=VLOOKUP(B11,A2:D6,4,FALSE)
+
+Change the name in B11 and watch the magic happen!
+
+==========================================================
+PART C: GRADE LOOKUP (No more manual checking!)
+==========================================================
+
+GRADE SCALE:
+Min_Score,Grade,Comment
+0,F,We need to talk
+50,D,Survived!
+60,C,Getting there
+70,B,Nice work!
+80,A,Smart cookie!
+90,A+,Absolute legend!
+
+STUDENT SCORES:
+Student,Score,Grade (use VLOOKUP)
+Aryan,85,=VLOOKUP(B73,$A$64:$C$69,2,TRUE) <-- TRUE for approximate match!
+
+TIP: Grade_Scale is a Named Range! To create it: Select A64:C69 then go to Formulas > Define Name > type "Grade_Scale"
+Once defined you can use: =VLOOKUP(B73,Grade_Scale,2,TRUE) - cleaner and easier to read!
+
+NOTE: Use TRUE when looking up ranges (like grades)
+Use FALSE for exact matches (like product IDs)
+
+==========================================================
+COMMON VLOOKUP ERRORS (Don't panic!):
+==========================================================
+#N/A = Can't find it (check spelling!)
+#REF! = Column number too big (count your columns)
+#VALUE! = Something's weird with your data
+
+==========================================================
+PRO TIPS:
+==========================================================
+1. Lookup value MUST be in the FIRST column of your range
+2. Use $ signs to lock your table reference (F4 key is your friend)
+3. VLOOKUP only looks RIGHT, never left (it's stubborn like that)
+4. For looking left, use INDEX+MATCH (next lesson spoiler!)
+
+==========================================================
+CHALLENGE:
+==========================================================
+Create a receipt generator:
+1. Enter product IDs
+2. Auto-fill product names and prices
+3. Calculate quantities and totals
+4. Feel like a spreadsheet wizard
+
+Next Lesson: INDEX MATCH - VLOOKUP's cooler older sibling

@@ -1,0 +1,45 @@
+MONTHLY HABIT TRACKER - Build Amazing Habits!,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"Hey Aryan! Track your habits and watch yourself grow! Consistency is the key to success!",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Month:,January 2026,,,Year Goal:,Become the best version of myself!,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+INSTRUCTIONS:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"Put 1 for completed, 0 for missed. Watch your streaks grow!",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+HABIT,Day1,Day2,Day3,Day4,Day5,Day6,Day7,Day8,Day9,Day10,Day11,Day12,Day13,Day14,Day15,Day16,Day17,Day18,Day19,Day20,Day21,Day22,Day23,Day24,Day25,Day26,Day27,Day28,Day29,Day30,Day31,TOTAL,PERCENTAGE,STREAK,MOTIVATION
+Wake Up Early (6 AM),1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,=SUM(B10:AF10),=AG10/31*100,=COUNTIF(B10:AF10,"1")-1,"=IF(AH10>=90,""SUPERSTAR! You're crushing it!"",IF(AH10>=70,""Amazing progress! Keep it up!"",IF(AH10>=50,""You're halfway there! Push harder!"",""Every day is a fresh start!"")))"
+Exercise (30 min),1,1,0,1,1,0,1,1,1,1,0,1,1,1,0,1,1,1,1,0,1,1,1,0,1,1,1,1,0,1,1,=SUM(B11:AF11),=AG11/31*100,=COUNTIF(B11:AF11,"1")-1,"=IF(AH11>=90,""FITNESS CHAMPION!"",IF(AH11>=70,""Strong and steady!"",IF(AH11>=50,""Building strength daily!"",""Start small, dream big!"")))"
+Read 20 Pages,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,0,1,1,1,1,1,=SUM(B12:AF12),=AG12/31*100,=COUNTIF(B12:AF12,"1")-1,"=IF(AH12>=90,""BOOKWORM EXTRAORDINAIRE!"",IF(AH12>=70,""Knowledge seeker!"",IF(AH12>=50,""Growing wiser each day!"",""One page at a time!"")))"
+Drink 8 Glasses Water,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,=SUM(B13:AF13),=AG13/31*100,=COUNTIF(B13:AF13,"1")-1,"=IF(AH13>=90,""HYDRATION HERO!"",IF(AH13>=70,""Water warrior!"",IF(AH13>=50,""Stay hydrated!"",""Drink up buttercup!"")))"
+No Social Media (1hr),0,1,0,1,1,0,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,=SUM(B14:AF14),=AG14/31*100,=COUNTIF(B14:AF14,"1")-1,"=IF(AH14>=90,""DIGITAL DETOX MASTER!"",IF(AH14>=70,""Breaking free!"",IF(AH14>=50,""Progress over perfection!"",""Try again tomorrow!"")))"
+Learn Something New,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,0,1,1,1,1,=SUM(B15:AF15),=AG15/31*100,=COUNTIF(B15:AF15,"1")-1,"=IF(AH15>=90,""CURIOSITY CHAMPION!"",IF(AH15>=70,""Forever learning!"",IF(AH15>=50,""Growth mindset!"",""Stay curious!"")))"
+Meditate (10 min),1,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,1,=SUM(B16:AF16),=AG16/31*100,=COUNTIF(B16:AF16,"1")-1,"=IF(AH16>=90,""ZEN MASTER!"",IF(AH16>=70,""Finding inner peace!"",IF(AH16>=50,""Calming the mind!"",""Breathe and begin!"")))"
+No Junk Food,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,=SUM(B17:AF17),=AG17/31*100,=COUNTIF(B17:AF17,"1")-1,"=IF(AH17>=90,""HEALTH GURU!"",IF(AH17>=70,""Eating clean machine!"",IF(AH17>=50,""Better choices daily!"",""You are what you eat!"")))"
+Practice Excel/Skill,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,=SUM(B18:AF18),=AG18/31*100,=COUNTIF(B18:AF18,"1")-1,"=IF(AH18>=90,""EXCEL WIZARD!"",IF(AH18>=70,""Skills on fire!"",IF(AH18>=50,""Practice makes perfect!"",""Every expert was a beginner!"")))"
+Gratitude Journal,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,=SUM(B19:AF19),=AG19/31*100,=COUNTIF(B19:AF19,"1")-1,"=IF(AH19>=90,""GRATITUDE GURU!"",IF(AH19>=70,""Thankful heart!"",IF(AH19>=50,""Counting blessings!"",""Find one thing to be grateful for!"")))"
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+DAILY TOTALS,=SUM(B10:B19),=SUM(C10:C19),=SUM(D10:D19),=SUM(E10:E19),=SUM(F10:F19),=SUM(G10:G19),=SUM(H10:H19),=SUM(I10:I19),=SUM(J10:J19),=SUM(K10:K19),=SUM(L10:L19),=SUM(M10:M19),=SUM(N10:N19),=SUM(O10:O19),=SUM(P10:P19),=SUM(Q10:Q19),=SUM(R10:R19),=SUM(S10:S19),=SUM(T10:T19),=SUM(U10:U19),=SUM(V10:V19),=SUM(W10:W19),=SUM(X10:X19),=SUM(Y10:Y19),=SUM(Z10:Z19),=SUM(AA10:AA19),=SUM(AB10:AB19),=SUM(AC10:AC19),=SUM(AD10:AD19),=SUM(AE10:AE19),=SUM(AF10:AF19),,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+MONTHLY SUMMARY,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Total Habits Completed:,=SUM(AG10:AG19),out of,310,possible,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Overall Success Rate:,=C24/E24*100,%,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Best Habit:,"Use =MAX(AH10:AH19) to find highest %",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Needs Work:,"Use =MIN(AH10:AH19) to find lowest %",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+OVERALL MOTIVATION:,=IF(B24>=90,"LEGENDARY MONTH! You're unstoppable!",IF(B24>=75,"FANTASTIC! You're building great habits!",IF(B24>=50,"GOOD PROGRESS! Keep pushing forward!","EVERY DAY IS A NEW CHANCE! Don't give up!"))),,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FORMULA CHEAT SHEET FOR ARYAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"1. SUM across row: =SUM(B10:AF10) - Counts all your 1s (completed habits)",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"2. PERCENTAGE: =AG10/31*100 - Divides total by days, multiplies by 100",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"3. COUNTIF for streaks: =COUNTIF(range,""<>1"") - Counts cells not equal to 1",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"4. Nested IF for messages: =IF(score>=90,""Great"",IF(score>=70,""Good"",IF(score>=50,""OK"",""Try harder"")))",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"5. MAX/MIN: =MAX(AH10:AH19) finds best habit, =MIN() finds one needing work",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CONDITIONAL FORMATTING IDEAS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"- Green fill for cells with 1 (completed)",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"- Red fill for cells with 0 (missed)",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"- Color scale for percentage column (red to green)",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"- Icon sets (stars/flags) for motivation column",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"Remember Aryan: It takes 21 days to build a habit and 90 days to make it a lifestyle! You've got this!",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

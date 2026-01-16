@@ -1,0 +1,85 @@
+LESSON 2: IF STATEMENTS - The Drama Queen of Excel
+==========================================================
+IF this THEN that ELSE something else
+Just like your life decisions but more organized
+==========================================================
+
+PART A: EXAM RESULTS (the moment of truth)
+==========================================================
+
+Student,Score,Pass/Fail?,Grade,Scholarship?
+Aryan,85,,,
+BFF_1,92,,,
+That_One_Friend,45,,,
+Class_Topper,98,,,
+Sleepy_One,55,,,
+Coffee_Addict,78,,,
+Last_Bencher,62,,,
+
+FORMULAS TO USE:
+Pass/Fail: =IF(B2>=50,"PASS","FAIL...yikes")
+Grade: =IF(B2>=90,"A - Genius",IF(B2>=80,"B - Smart Cookie",IF(B2>=70,"C - Getting There",IF(B2>=50,"D - Survived","F - We Need To Talk"))))
+Scholarship: =IF(B2>=90,"YES! Free Money!","Keep Trying Bestie")
+
+==========================================================
+PART B: SHOULD ARYAN GO OUT TODAY? (important decisions)
+==========================================================
+
+Factor,Status,Points
+Weather,Sunny,
+Money in Wallet,500,
+Assignments Due,3,
+Energy Level,7,
+Friend Available,Yes,
+Traffic,Heavy,
+
+Decision Formula Examples:
+=IF(B2="Sunny",10,0) --> Weather points
+=IF(B3>200,10,5) --> Money check
+=IF(B4=0,10,IF(B4<3,5,0)) --> Assignment guilt level
+=IF(B6="Yes",10,0) --> Friend factor
+
+FINAL VERDICT:
+Total Points:,=SUM(C29:C34)
+Should Go Out:,=IF(C43>=30,"GO HAVE FUN!","Stay home and Netflix")
+
+==========================================================
+PART C: SHOPPING BUDGET CHECKER (we all need this)
+==========================================================
+
+Item,Price,Budget,Can Buy?,Impulse Buy Warning
+Cute Bag,2500,2000,,
+Coffee Machine,3500,4000,,
+Phone Case,500,1000,,
+Sneakers,8000,5000,,
+Books,1200,1500,,
+Skincare,2000,1800,,
+
+Can Buy Formula: =IF(B2<=C2,"Yes! Treat Yourself!","Put it back slowly...")
+Impulse Warning: =IF(B2>C2*1.5,"DANGER: Step Away From The Cart","You're doing great sweetie")
+
+==========================================================
+NESTED IF (When life gets complicated):
+==========================================================
+=IF(condition1, result1, IF(condition2, result2, IF(condition3, result3, "else")))
+
+Real example:
+=IF(A1>=90,"Excellent",IF(A1>=70,"Good",IF(A1>=50,"Okay","Needs Chai & Motivation")))
+
+==========================================================
+AND / OR (The Relationship Status of Conditions):
+==========================================================
+=IF(AND(A1>50,B1>50),"Both conditions met - rare like finding parking","Nope not today")
+=IF(OR(A1>90,B1>90),"At least one is great - like having backup plans","Back to the drawing board")
+
+==========================================================
+PRACTICE CHALLENGE:
+==========================================================
+Create a formula that tells Aryan:
+- "Perfect Day" if weather is sunny AND money > 500 AND no assignments
+- "Maybe Day" if at least 2 conditions are met
+- "Netflix Day" if everything is against you
+
+Good luck! You'll need IF, AND, OR - basically a therapy session in Excel form.
+
+Next Lesson: VLOOKUP - Finding stuff like finding your keys (but actually works)
